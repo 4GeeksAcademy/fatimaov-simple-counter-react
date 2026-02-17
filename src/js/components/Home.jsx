@@ -1,9 +1,7 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-// Import component
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
+import { spanStyle } from "./SecondsCounter";
 import SecondsCounter from "./SecondsCounter";
 
 // Styles
@@ -23,6 +21,7 @@ const divStyle = {
 const Home = ({ ones, tens, hundreds, thousands, tenThousands, hundredThousands }) => {
 	return (
 		<div style={divStyle}>
+			<span style={spanStyle}><FontAwesomeIcon icon={faClock} /></span>
 			<SecondsCounter
 				ones={ones}
 				tens={tens}
