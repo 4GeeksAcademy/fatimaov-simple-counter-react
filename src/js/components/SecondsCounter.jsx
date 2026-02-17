@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
 
 // Styles
 const spanStyle = {
@@ -13,7 +15,7 @@ function SecondsCounter({ ones, tens, hundreds, thousands, tenThousands, hundred
     
     return (
         <>
-            <span style={spanStyle}>⏱</span>
+            <span style={spanStyle}><FontAwesomeIcon icon={faClock} /></span>
             <span style={spanStyle}>{hundredThousands}</span>
             <span style={spanStyle}>{tenThousands}</span>
             <span style={spanStyle}>{thousands}</span>
