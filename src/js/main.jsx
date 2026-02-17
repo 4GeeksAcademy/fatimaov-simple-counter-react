@@ -13,7 +13,7 @@ import Home from './components/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-let seconds = 123456;
+let seconds = 0;
 setInterval(() => {
     const placeValue = [...seconds.toString()].reverse();
     root.render(
